@@ -7,6 +7,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int DigitCount(int num)
 {
+    num = Math.Abs(num);  //сделали модуль числа (num)
     int count = 0;
     while (num > 0)
     {
@@ -16,4 +17,5 @@ int DigitCount(int num)
     return count;
 }
 int res = DigitCount(number);
+
 Console.WriteLine($"Количество цифр числа {number} = {res}");
